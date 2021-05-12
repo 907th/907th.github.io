@@ -1,0 +1,59 @@
+@import url("//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600");
+@import url("//cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css");
+@import url("//cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #15110c;
+}
+
+body {
+  background-color: #fcfcfc;
+  padding-top: 32px;
+}
+
+.content {
+  max-width: 1024px;
+  margin: 0px auto;
+}
+
+.header {
+  border-radius: 16px;
+  background-color: #eaf1f1;
+  padding: 16px 0px;
+
+  &__avatar {
+    width: 256px;
+    height: 256px;
+    border-radius: 128px;
+    display: block;
+    margin: auto;
+  }
+
+  &__name,
+  &__description {
+    padding: 0px 16px;
+  }
+
+  &__contacts {
+    padding: 32px 16px 0px;
+  }
+}
+
+.footer {
+  width: 100%;
+  margin-top: 16px;
+  text-align: center;
+  font-size: smaller;
+}
+
+.contacts {
+  &__link {
+    display: inline-block;
+
+    & + & {
+      margin-right: 6px;
+    }
+  }
+}

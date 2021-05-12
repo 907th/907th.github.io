@@ -1,0 +1,7 @@
+<div class="contacts">
+  {% for link in site.data.contacts %}
+    <a class="contacts__link contacts__link--{{link[0]}}" href="{{ link[1] }}">
+      <img src="/assets/contacts/{{ link[0] }}.png">
+    </a>
+  {% endfor %}
+</div>

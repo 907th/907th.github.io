@@ -1,0 +1,25 @@
+<div class="home-recent-posts">
+  <h2 class="home-recent-posts__header">Recent posts</h2>
+  <div class="home-recent-posts__list">
+    {% for post in site.posts %}
+      {% cycle "open row": '<div class="pure-g">', "" %}
+      <div class="pure-u-1 pure-u-md-1-2">
+        <div class="home-recent-posts__post">
+          <div class="home-recent-posts__post-date">
+            {{ post.date | date: site.date_format }}
+          </div>
+          <h3 class="home-recent-posts__post-title">
+            <a href="{{ post.url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          <div class="home-recent-posts__post-excerpt">
+            {{ post.excerpt }}
+          </div>
+        </div>
+      </div>
+      {% cycle "close row": "", "</div>" %}
+    {% endfor %}
+    {% cycle "close row": "", "</div>" %}
+  </div>
+</div>

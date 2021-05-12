@@ -1,0 +1,15 @@
+title: chernenkov-webdev.com
+description: A personal blog of software engineer Aleksei Chernenkov.
+url: https://chernenkov-webdev.com
+
+my_name: Aleksei Chernenkov
+date_format: "%b %-d, %Y"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
